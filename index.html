@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <style>
-span{background-color: aqua;}
-#flex,#lado{display: flex;}
+    <link rel="stylesheet" href="style.css">
+     
 
-   </style>
 </head>
-<body>
-    <div id="comum">Aqui valor Comum de Display
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, voluptates reprehenderit facilis voluptate ab deleniti eligendi! Animi suscipit eius, quos, nemo ipsum, quis natus illo assumenda cumque optio accusantium perspiciatis?</p>
-    </div>
-    <span>Ola muito obg, Valor Comum de Span</span>
-    <div id="flex">
-        <div id="lado">Aqui valor Comum de Display
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eius totam odio quisquam optio, laudantium unde obcaecati earum eligendi eos iusto sapiente quasi dicta! Error ipsa natus perferendis autem commodi!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ex, saepe tempore ipsam harum eius est, beatae explicabo suscipit placeat corrupti. Ut alias distinctio laboriosam ab accusamus temporibus veritatis quos?</p>
-        </div>
-        <span>Ola muito obg, Valor Comum de Span
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem ab voluptatum dignissimos saepe? Non obcaecati unde facere maiores, fugiat, deserunt eligendi asperiores illo accusantium dolorum repellat est animi sint aliquid.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quos laboriosam, deserunt asperiores voluptatum laudantium eius veniam ratione? Inventore reiciendis molestiae quae aperiam facilis. Et, labore facilis? A, dolor similique.</p>
-        </span>
-    </div>
 
+<body>
+    <main id="capa">   
+        
+            <p id="titulo">
+                Bem vindo ao meu site, destinado a conhecer meus desenvolvimentos e experiencias profissionais !
+            </p>
+        
+        
+    </main>
+    <main>
+    <span id="Agro" onmouseover="abrirAgro()"onmouseout="fecharAgro()" onClick="window.open('Agro.html');">
+        <img src="imagens/logo_agro_P(195X141).png" alt="Agropecuaria">
+        <p id="agri" style="display: none ;">Meu desenvolvivento na area Agraria.</p>
+    </span>
+    <span id="Info" onload="scroll(0, 100)" onmouseover="abrirInf()"onmouseout="fecharInf()">
+        <img src="imagens/icon_developer(100X100).png" alt="Developer">
+        <p id="inf" style="display: none ;">Meu desenvolvimento na area Tecnologica.</p> 
+    </span>
+   
+    </main> 
+<script src="context.js">
+
+</script>
 </body>
+
 </html>
