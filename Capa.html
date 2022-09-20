@@ -5,31 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
- <style>
-  #Agro{ background-color: green; width: 50%}
-  #Info{ background-color: blue;width: 50%;}
-  div{text-align: center; align-self: center;}
-  body{display: flex; flex-direction: column;}
-  main{height: 50px;width: 400px;background-color: aqua;text-align: center;align-self: center; z-index: 1;position: absolute;}
-  #main{display: flex; flex-direction:row;height: 100%;}
-
-</style>
+    <link rel="stylesheet" href="style.css">
+     
 
 </head>
 
 <body>
-    <main>   
-        <p>Selecione area queira vê sobre mim</p>
+    <main id="capa">   
+        
+            <p id="titulo">
+                Bem vindo ao meu site, destinado a conhecer meus desenvolvimentos e experiencias profissionais !
+            </p>
+        
+        
     </main>
-    <div id="main">
-     <div id="Agro">Agropecuária
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti voluptatum esse exercitationem ipsum minus amet facere. Ab aspernatur ipsam maiores? Quis veniam esse atque a nihil earum et ipsa facere.
-     </div>
-    
-    <div id="Info">Informática
-       
-    </div>
-</div> 
+    <main>
+    <span id="Agro" onmouseover="abrirAgro()"onmouseout="fecharAgro()">
+        <img src="imagens/logo_agro_P(195X141).png" alt="Agropecuaria">
+        <p id="agri" style="display: none ;">Meu desenvolvivento na area Agraria.</p>
+    </span>
+    <span id="Info" onload="scroll(0, 100)" onmouseover="abrirInf()"onmouseout="fecharInf()">
+        <img src="imagens/icon_developer(100X100).png" alt="Developer">
+        <p id="inf" style="display: none ;">Meu desenvolvimento na area Tecnologica.</p> 
+    </span>
+   
+    </main> 
+<script src="context.js">
+
+</script>
 </body>
+
 </html>

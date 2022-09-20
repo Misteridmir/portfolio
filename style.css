@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap');
+
+
+body{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height: 100vh; 
+    background: linear-gradient(to right,rgb(0, 255, 0),blue);
+    /*background-image: url("imagens/capa_logo_1280X800.png");background-repeat: no-repeat; background-position: center;*/
+}
+
+#Agro{ 
+    background-image: linear-gradient(/*to left,rgb(0, 255, 0), #A8FF96*/);
+    
+  
+ 
+}
+
+#Info{ 
+    background-image: linear-gradient(/*to right,rgb(0, 0, 255),#A8A3FF*/);
+  
+}  
+p{
+    font-family: 'Roboto Flex', Helvetica,sans-serif;font-weight:600;font-size: large;
+    text-align:center; 
+    padding: 12px 16px;
+    line-height: 25px; 
+    background-color: rgba(255, 255, 255, 9%);
+    width: auto;
+    border-radius: 5px;
+    margin: 0px 20%;
+    border: 3px solid rgb(199, 193, 193);
+
+}
+#capa{
+    height: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+}
+span{ 
+    
+    text-align: center;
+    line-height: 150px;
+    padding: 20px;
+    width: 42%;
+    height: 89%;
+    margin-bottom: 40px;
+    background-color: rgba(240, 248, 255, 0.082);
+    outline: 6px solid rgba(160, 160, 160, 0.555);
+    border-radius: 4px;
+}
+#trans{display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;
+}

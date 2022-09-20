@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+body{
+    margin: 0px;
+    /*background-image: url("imagens/agro_logo_1280X800.png");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background: linear-gradient(to left, #008000a4, #4dff4da4);
+}
+.cabecalho_imagem>img{ display: block; margin: auto;
+}
+svg{height: 32px;
+    width: 34px;}
+path{stroke-linecap: round; stroke:black; stroke-width: 4; }
+nav{display: inline;}
+
+
+nav>ul{
+    display:none;
+    padding: 5px;
+    margin: 10px 35px;
+}
+nav>ul>li{
+  
+    margin: 8px 0px;
+    padding: 4px 4px;
+    border: 2px solid black;
+    border-radius: 8px;
+    list-style: none;
+    width: fit-content;
+    
+}
+nav>ul#menu_python>li{
+    background-color: rgb(3, 3, 248);
+}
+nav>ul#menu_agropecuaria>li{
+    background-color: rgb(24, 224, 67);
+}
+nav>ul#menu_ads>li{
+    background-color: rgb(10, 116, 255);
+}
+a{
+    color: rgb(54, 54, 54);
+    text-decoration: none;
+}  
+a::after{
+    content: "🔗";
+}  
+div{margin:0px 10px;}
+
+h1,p,li{font-family: 'Source Sans Pro', sans-serif;}
+
+p{font-size: larger;}
+
+.agri{background: url("imagens/repolho_logo\(450X308\).png") no-repeat center;}
+
+#dev{position:fixed; bottom: 0px; right: 0px;}
