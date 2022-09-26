@@ -9,7 +9,7 @@
     --after_la: 43%;
 }
 html{ height: 100%;    
-    background: linear-gradient(to right,rgb(0, 255, 0),blue);
+    background: linear-gradient(to right,rgb(0, 200, 0),rgb(0, 0, 200));
     
 }
 
@@ -27,20 +27,20 @@ body{
 
 #Info:hover{ 
     background-color: rgba(71, 78, 250, 0.116);}
-   
+
+    
 p{
     font-family: 'Roboto Flex', Helvetica,sans-serif;font-weight:600;font-size: large;
     text-align:center; 
     padding: 5% 0.5%;
     line-height: 25px; 
-    background-color: rgba(255, 255, 255, 9%);
+    color: #f0e9e9;
     max-width: max-content;
     min-width: min-content;
-    border-radius: 5px;
-    margin: auto;
-    border: 3px solid rgb(199, 193, 193);
 
+    margin: auto;
 }
+main > p{font-size: x-large;}
 #capa{
     display: flex;
     align-items: center;
@@ -61,8 +61,9 @@ span{
     height: var(--altura);
     width: var(--largura);
     background-color: rgba(240, 248, 255, 0.082);
-    outline: 6px solid rgba(160, 160, 160, 0.555);
-    border-radius: 4px;
+    outline: 1px solid rgba(160, 160, 160, 0.555);
+    border-radius: 3px;
+    box-shadow: 3px -3px 8px #ffffff1f;
     transition-duration: 0.2s;
 }
 span:hover{

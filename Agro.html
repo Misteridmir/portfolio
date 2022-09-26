@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page.css">
     <link rel="stylesheet" href="Agro.css">
     <title>Idmir Júnio</title>
 </head>
-<body>
+<body id="Agropecuaria">
     <nav id="menu">
         <svg >
             <path d="M4 10 l20 0" />  <!-- M4 ='mover 4 ?' (delocamento vertical em ?) 'linha para'= l(tamanho da linha em ?)  (inclinação da reta em graus)-->
@@ -16,26 +17,30 @@
           Sorry, your browser does not support inline SVG.
         </svg>
         <ul id="menu_agropecuaria">
-            <li>Agricultura Geral e Olericultura</li>
-            <li>Zootecnia Geral</li>
-            <li>Nutrição Animal e Sanidade Animal</li>
-            <li>Paisagismo e Jardinagem</li>
-            <li>Solos e Nutrição de Plantas</li>
-            <li>Topografia</li>
-            <li>Irrigação e Drenagem</li>
-            <li>Zootecnia de Pequenos e Médios Animais</li>
-            <li>Zootecnia de Grande Animais</li>
-            <li>Agroecologia e Sistemas Agroflorestais</li>
-            <li>Culturas Anuais</li>
-            <li title="Fruticultura">Fruticultura e Processamento Agroindustriais</li>
-            <li>Produção de mudas e Sementes</li>
-            <li>Extensão Rural</li>
-            <li>Administraçao e Empreendedorismo Rural</li>
+            <li onclick="focar('Agricultura_Geral_e_Oleiricultura')">Agricultura Geral e Olericultura</li>
+            <li onclick="focar('Zootecnia_Geral')">Zootecnia Geral</li>
+            <li onclick="focar('Nutrição_e_Sanidade_Animal')">Nutrição Animal e Sanidade Animal</li>
+            <li onclick="focar('Paisagismos_e_Jardinagem')">Paisagismo e Jardinagem</li>
+            <li onclick="focar('Solos_e_Nutrição_de_Plantas')">Solos e Nutrição de Plantas</li>
+            <li onclick="focar('Topografia')">Topografia</li>
+            <li onclick="focar('Irrigação_e_Drenagem')">Irrigação e Drenagem</li>
+            <li onclick="focar('Zootecnia_de_Pequenos_e_Médios_Animais')">Zootecnia de Pequenos e Médios Animais</li>
+            <li onclick="focar('Zootecnia_de_Grande_Animais')">Zootecnia de Grande Animais</li>
+            <li onclick="focar('Agroecologia_e_Sistemas_Agroflorestais')">Agroecologia e Sistemas Agroflorestais</li>
+            <li id="aguarde">Culturas Anuais</li>
+            <li id="aguarde">Fruticultura e Processamento Agroindustriais</li>
+            <li id="aguarde">Produção de mudas e Sementes</li>
+            <li id="aguarde">Extensão Rural</li>
+            <li id="aguarde">Administraçao e Empreendedorismo Rural</li>
         </ul>
     </nav>
 
     <header>
-        <img id="dev" src="imagens/icon_developer(100X100).png" alt="Developer">
+        <picture>
+            
+            <img id="dev" src="imagens/icon_developer(100X100).png" alt="Developer" onclick="enviar('Info.html')">
+        </picture>
+
         <picture class="cabecalho_imagem"> 
             <source media="(min-width: 1360px)" srcset="imagens\logo_agro_M(389X280).png" type="image/png">
             <source media="(max-width: 720px)" srcset="" type="image/png">   
@@ -46,48 +51,51 @@
 
 
     <main>
-        <div class="agri">
+        <div id="Agricultura_Geral_e_Oleiricultura" class="agri">
             <h1>Agricultura Geral e Oleiricultura
                 
             </h1>
-                <p>A matéria basicamente se tratou do cultivo de hortaliças e todo seu sistema de Mercado desde a escolha das Cultivares até o embale do produto. De acordo com <a href="https://incaper.es.gov.br/olericultura#:~:text=A%20olericultura%20%C3%A9%20o%20ramo,%2C%20ra%C3%ADzes%2C%20caules%20e%20frutos.">incaper</a> <q cite="https://incaper.es.gov.br/olericultura#:~:text=A%20olericultura%20%C3%A9%20o%20ramo,%2C%20ra%C3%ADzes%2C%20caules%20e%20frutos.">A olericultura é o ramo da horticultura que abrange a exploração de um grande número de espécie de plantas, habitualmente conhecidas como hortaliças e que podem ser constituídas das seguintes partes das plantas: folhas, inflorescências, raízes, caules e frutos.</q>Além de tratar desses tipos de culturas, foram abrangidos, conceitos de Agricultura, sua aplicação no mundo, dentro do Mercado e suas caractéristicas como: modelos de produções, consorciações, dificuldades, variabilidade genética e etc...</p>
+                <p>A matéria basicamente se tratou do cultivo de hortaliças e todo seu sistema de Mercado desde a escolha das Cultivares até o embale do produto. De acordo com <a href="https://incaper.es.gov.br/olericultura#:~:text=A%20olericultura%20%C3%A9%20o%20ramo,%2C%20ra%C3%ADzes%2C%20caules%20e%20frutos.">incaper</a> <q cite="https://incaper.es.gov.br/olericultura#:~:text=A%20olericultura%20%C3%A9%20o%20ramo,%2C%20ra%C3%ADzes%2C%20caules%20e%20frutos.">A olericultura é o ramo da horticultura que abrange a exploração de um grande número de espécie de plantas, habitualmente conhecidas como hortaliças e que podem ser constituídas das seguintes partes das plantas: folhas, inflorescências, raízes, caules e frutos.</q>Além de tratar desses tipos de culturas, foram envolvidos, conceitos de Agricultura e sua aplicação no mercado mundial e suas caractéristicas como: modelos de produções, consorciações, dificuldades, variabilidade genética e etc...</p>
                 <p>Dentre as culturas estudadas, estão como exemplo: </p>
-                    <ul>
-                        <li>Alface</li>
-                        <li>Pepino</li>
-                        <li>Pimentão</li>
-                        <li>Tomate</li>
-                        <li>Cenoura</li>
-                        <li>Cebola</li>
-                        <li>Cebolinha</li>
+                    <ul id="hortaliças">
+                        <li class="opção_de_planta">🥬 Alface </li>
+                        <li class="opção_de_planta">🥒 Pepino </li>
+                        <li class="opção_de_planta">🌶️ Pimentão </li>
+                        <li class="opção_de_planta">🍅 Tomate </li>
+                        <li class="opção_de_planta">🥕 Cenoura  </li>
+                        <li class="opção_de_planta">🧅 Cebola  </li>
+                   
                     </ul>
+                    <div id="em_breve">Em breve</div>
         </div>
-        <div class="animal">
+        <div id="Zootecnia_Geral" class="animal">
             <h1>Zootecnia Geral</h1>
-                <p>Uma matéria voltada a alimentação de determinadas culturas. Estuda a digestão desses animais conhecendo seus aparelhos digestivos, vizando melhorar a performarce digestiva, causando menos custo alimentar e mais produto animal </p>
-                <p>De modo geral Entender a anatomia Basica do seus Sistema Digestivoé a essência dessa máteria, mas abrange Custos de Produções, modos de Produções entre outros Fatores relevantes para a Criação dos mesmos</p>
+                <p>Uma matéria voltada a alimentação de determinadas especies. Estuda a digestão desses animais conhecendo seus aparelhos digestivos, vizando melhorar a performarce digestiva, causando menos custo alimentar e mais produto animal </p>
+                <p>De modo geral Entender a anatomia Basica do seus Sistema Digestivo é a essência dessa máteria, mas abrange custos de Produções, modos de produções entre outros fatores relevantes para a criação dos mesmos</p>
                 <p>Dentre os animais estudados estão:</p>
                 
-                    <ul>
-                        <li>Bovinos</li>
-                        <li>Bubalinos</li>
-                        <li>Equinos</li>
-                        <li>Caprinos e Ovinos</li>
-                        <li>Coelhos</li>
-                        <li>Aves</li>
-                        <li>Suinos</li>
-                        <li>Peixes</li>
+                    <ul id="animais">
+                        <li class="ruminante">🐂 Bovinos</li>
+                        <li class="ruminante">🐃 Bubalinos</li>
+                        <li class="monogastrico">🐎 Equinos</li>
+                        <li class="monogastrico">🐐 Caprinos </li>
+                        <li class="monogastrico">🐏 Ovinos</li>
+                        <li class="monogastrico">🐇 Coelhos</li>
+                        <li class="monogastrico">🐔 Aves</li>
+                        <li class="monogastrico">🐖 Suinos</li>
+                        <li class="monogastrico">🐟 Peixes</li>
                     </ul>
+                    <div id="em_breve">Em breve</div>
         </div>
-        <div class="animal">
+        <div id="Nutrição_e_Sanidade_Animal" class="animal">
             <h1>Nutrição e Sanidade Animal</h1>
                 <p>Como complemento da Máteria de Zootecnia Geral busca demostrar a fundo as criações dos animais, de forma nutricional compreendendo o seu sistema digestivos, reprodutivo e sua condição fitossanitária, visando bem estar animal.</p>
-                <p>Além de entender o mercado voltado para a criação desses animais, buscando o melhor resultado do produto, desde as condições de nutrição como a escolha do alimento ao processamento e balanceamento da ração para os animais, a condição sanitaria do ambiente e dos processos envolvidos á qualidade do produto.
+                <p>Além de entender o mercado voltado para a criação desses animais, buscando o melhor resultado do produto, condicionando em condições de nutrição como a escolha do alimento, processamento, balanceamento da ração e a condição sanitaria do ambiente, dos processos envolvidos á qualidade do produto.
                 </p>
 
                 
         </div>
-        <div class="flores">
+        <div id="Paisagismos_e_Jardinagem" class="flores">
             <h1>Paisagismo e Jardinagem</h1>
                 <p>Dentre as multiplas areas do conhecimento do tecnico está o de desenvolver Jardins, Paisagens entre outros serviços com Plantas Ornamentais. O maior serviço com elas é o comercio de decoração, seja para casas, eventos, jardins ou qualquer outro lugar. A Jardinage busca entender o ciclo e o estado delas de forma a desenvolvelas para fim artistico. Enquanto o Paisagismo afim de melhorar a escolha e o ambiente de forma a propiciar uma visão estetica com caracteristicas saudaveis para a visão e o psicologisco do observador.</p>
                 <p>A matéria também visa entender esse comercio de Plantas Ornamentais para agregar valor ao aluno nesse mercado. Entre as areas de Atuação do tecnico pela materia está: </p>
@@ -95,13 +103,12 @@
                         <li>Planejamento e Desenvolvimento de Parques e Bancos de Germoplasmas</li>
                         <li>Comercio de Plantas Ornamentais</li>
                         <li>Lojas de Jardinagem</li>
-                        <li>Produção de Gramados</li>
-                        <li>S</li>
+                        <li>Produção, implantação de Gramados</li>
                     </ul>
 
 
         </div>
-        <div class="solo">
+        <div id="Solos_e_Nutrição_de_Plantas" class="solo">
             <h1>Solos e Nutrição de Plantas</h1>
                 <p>A matéria requer diferenciar os tipo de Solos,conhecer os horizontes do solo, a composição do solo, granulométria, e outras caractéristicas. Propiciando conhecer os nutrientes do local de Plantio e entender de forma pratica o serviço de coleta de solo para analise em Labóratorio. Apresentando assim fatores concretos para a escolha e formulação da nutrição da cultura. </p>
                 <p>Visa conhecer as devidas precauções para fornecimento e disponibilidade de nutrientes no solo para diversas culturas, além de demonstar tecnicas para melhor disponibilidade e mobilidade de Nutrientes no Solo como, utilização de leguminosas que propiciam bacterias do genero Rizobium, FBN disponibilizando Nitrogênio através dessa tecnicas. </p>
@@ -113,20 +120,42 @@
                         <li>Tratos Culturais</li>
                         <li>Colheita</li>
                     </ul>
+                    <div id="em_breve">Em breve</div>
         </div>
-        <div class="topo">
+        <div id="Topografia" class="topo">
             <h1>Topografia</h1>
-                <p>Conhecer o relevo de ama area é uma das habilidades de um tecnico, de forma basica enteder o relevo e ser capaz de criar um Croqui de platio, mapear uma area, verificar declividades e pontuar areas.Isso é nescessario basicamente para evitar desperdicios em grandes areas de plantio evitando deslocamentos de nutrientes devido declividades.</p>
+                <p>Conhecer o relevo de uma area é uma das habilidades de um tecnico, de forma basica enteder o relevo e ser capaz de criar um croqui de plantio, mapear uma area, verificar declividades e pontuar areas.Isso é nescessario basicamente para evitar desperdicios em grandes areas de plantio evitando deslocamentos de nutrientes devido declividades.</p>
+                <p>Estação total, o principal equipamento do topografo, segundo a <a href="https://santiagoecintra.com.br/">Santiago e Cintra</a> <q cite="https://santiagoecintra.com.br/blog/estacao-total-como-utilizar-na-topografia/#:~:text=A%20esta%C3%A7%C3%A3o%20total%20%C3%A9%20um%20equipamento%20eletr%C3%B4nico%20utilizado%20para%20medidas,%C3%B3ptico%20utilizado%20para%20medir%20%C3%A2ngulos.">A estação total é um equipamento eletrônico utilizado para medidas de ângulos e distâncias nos levantamentos topográficos. Também conhecida como taqueômetro, a estação total é a junção de dois instrumentos: o teodolito e o distanciômetro.</q>  </p>
         </div>
-        <div class="irrigacao">
+        <div id="Irrigação_e_Drenagem" class="irrigacao">
             <h1>Irrigação e Drenagem</h1>
                 <p>Uma das caracteristicas da Agroindustria é uso de grandes volumes de agua, para evitar despedicios, Empresas de pesquisa como Embrapa com função de inovar e foca na geração de conhecimentos e tecnologias para a agropecuária brasileira, faz-se pesquisas para economizar aguá e para isso é preciso calcular a nescessidade de agua para uma determinada cultura, a materia busca mostrar calculos com Equações desenvolvidadas com experiementos e pesquisas para se aplicar em campo, o tecnico nescessita conhecer esses métodos e calculos para aplicação pratica.</p>
                 <p>Utilizando tecnicas e experimentos para conhecer a capacidade de armazenamento da agua no solo,além de medir fatores de perda de agua como, drenagem, evaporação por ensolação etc... o tecnico é capaz de descobrir a nescessidade de agua a ser irrigada na cultivar.<p>
-                <p>Além de saber as diferentes formas de Irrigação </p>
+                <p>Além de saber os diferentes métodos de Irrigação </p>
+                <div id="em_breve">Em breve</div>
         </div>
+        <div id="Zootecnia_de_Pequenos_e_Médios_Animais" class="animal">
+            <h1>Zootecnia de Pequenos e Médios Animais</h1>
+            <p>Com o objetivo de estudar a fundo as diferentes Formas de Produção dos animais envolvidos na pecuaria. Proceder com cuidados básicos e equilibrar seu estresse e produção, entender o intuito de cada raça se enquadra em cada cenáriode produção. </p>
+
+        </div>
+        <div id="Zootecnia_de_Grande_Animais" class="animal">
+            <h1>Zootecnia de Grande Animais</h1>
+            <p>Animais de Grande porte tem suas conformidades e seus perigos, saber como gerenciar sua criação para uma produção segura e entender o suas nescessidades e estresses, propiciando suas conforto e produção na criação dos mesmos. </p>
+            <p>Além de entender suas conformidades raciais que geralmente estão atreladas a determinadas regiões no Brasil. </p>
+            <div id="em_breve">Em breve</div>
+        </div>
+        <div id="Agroecologia_e_Sistemas_Agroflorestais" class="floresta">
+            <h1>Agroecologia e Sistemas Agroflorestais</h1>
+            <p>SAF's (Sistemas AgroFlorestais) segundo a <a href="https://www.embrapa.br/">Embrapa</a><q cite="https://www.embrapa.br/codigo-florestal/sistemas-agroflorestais-safs">SAFs para recuperação ambiental são sistemas produtivos que podem se basear na sucessão ecológica, análogos aos ecossistemas naturais, em que árvores exóticas ou nativas são consorciadas com culturas agrícolas, trepadeiras, forrageiras, arbustivas, de acordo com um arranjo espacial e temporal pré estabelecido, com alta diversidade de espécies e interações entre elas</q>. Na busca de metodos para impedir o desmatamento e maximizar as pequenas areas de produção de forma ecologica o Saf's esta entre os melhores</p>
+            <p>Mas existem outras métodos e formações capazes de auxiliar nesse objetivo por um Agronegocio mais sustentavel</p>
+        </div>
+        <div id="em_breve">Em breve</div>
+
     </main>
+    <footer>
+
+    </footer>
 </body>
-<script>
-    window.alert("No atual momento o site não está adaptado á ser visualizado em celulares!")
-</script>
+<script src="context.js"></script>
 </html>
