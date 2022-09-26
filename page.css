@@ -2,25 +2,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 body{
-    margin: 3px 15vh;
+    height: 100%;
+    margin: 3px 15vh 0px 15vh;
     /*background-image: url("imagens/agro_logo_1280X800.png");*/
     background-repeat: no-repeat;
     background-position: center;
 }    
-#aguarde{display: none;}
+.aguarde{display: none;}
+
 h1{ padding: 3px 20px;}
 
 .cabecalho_imagem>img{ display: block; margin: auto;}
-svg{display: none;
-    height: 32px;
-    width: 34px;}
-path{stroke-linecap: round; stroke:black; stroke-width: 4; }
+
+#menu{ display: none;}
+
+svg{ display: none; height: 32px; width: 34px;}
+
+
+path{ stroke-linecap: round; stroke:black; stroke-width: 4; }
 
 
     
 
 main> div, header{min-height: 130vh;}
+
 nav{display: inline;}
+
 nav>ul{
     
     margin: 0px;
@@ -55,9 +62,10 @@ div{margin:0px 10px;}
 h1,p,li{font-family: 'Source Sans Pro', sans-serif;}
 
 li{padding: 2px 4px;}
+
 p{font-size: 1.1em; line-height: 2em; }
 
-#em_breve{
+.em_breve{
     height: 40vh;
     
     border-radius: 10px;
@@ -70,7 +78,19 @@ p{font-size: 1.1em; line-height: 2em; }
     
 }
 
-#dev{position:fixed; bottom: 14px; right: 14px;
-    background-color: rgba(0, 0, 200, 0.199);
+#icon_page{position:fixed; bottom: 14px; right: 14px;
     border-radius: 100%;
 }
+footer{
+    padding: 2px;
+    border-radius: 2px;
+    margin: 5px 0px -2px 0px;
+
+}
+footer>ul>li{
+    list-style: none;
+    padding: 1.6px;
+}
+footer a{color: black;}
+
+footer p{ margin-left: 40px;}

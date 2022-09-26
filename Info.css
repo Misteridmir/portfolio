@@ -1,10 +1,20 @@
 @charset "UTF-8";
 
-
+ :root{ 
+    --cor-text-footer:  rgb(0, 0, 0);
+ }
 body{background:linear-gradient(to left, rgb(0,0,200), rgba(0, 0, 200, 0.562));}    
 
 div{height: 120vh;}
 
 nav>ul>li{background-color: rgb(0, 0, 180);}
+
 nav>ul>li:hover{background-color: rgb(0, 0, 220);}
-#em_breve{background-color: rgba(30, 30, 221, 0.781); border: 5px solid rgba(1, 1, 99, 0.795);}
+
+.em_breve{background-color: rgba(30, 30, 221, 0.781); border: 5px solid rgba(1, 1, 99, 0.795);}
+
+#icon_page{background-color: rgba(72, 192, 72, 0.486);}
+
+footer{background-color: rgb(25, 0, 165); border: 2px solid rgb(2, 2, 97);color: var(--cor-text-footer);} 
+footer a{color: var(--cor-text-footer);}
+
