@@ -5,6 +5,6 @@ window.onload = foco()
 function carta(lugar, flex){document.getElementById(lugar).style.display = flex}
 
 function enviar(link) {
-    window.open(link, '_blank');
+    window.open(link, '_self');
 }
 function focar(foco){document.getElementById(foco).focus({preventScroll:true});}

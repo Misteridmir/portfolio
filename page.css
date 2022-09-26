@@ -24,7 +24,7 @@ path{ stroke-linecap: round; stroke:black; stroke-width: 4; }
 
     
 
-main> div, header{min-height: 130vh;}
+/*main> div, header{min-height: 130vh;}*/
 
 nav{display: inline;}
 
@@ -83,8 +83,8 @@ p{font-size: 1.1em; line-height: 2em; }
 }
 footer{
     padding: 2px;
-    border-radius: 2px;
-    margin: 5px 0px -2px 0px;
+    border-radius: 20px 20px 0px 0px;
+    margin: 10vh 0px -20px 0px;
 
 }
 footer>ul>li{
