@@ -13,6 +13,37 @@ html{ height: 100%;
     
 }
 
+::-webkit-scrollbar{width: 1px;}
+::-webkit-scrollbar-thumb{ 
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track{background-color: black;}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(white, #ffffff7c, #ffffff17);
+    width: 100%;
+    position: relative;
+    animation: cabeca 8s infinite;
+    animation-direction: alternate;
+    /*animation-fill-mode: forwards;*/
+}
+@keyframes cabeca {
+    0%   {background-color: white; box-shadow:0.5px 0px 18px 0px #ffffff; }
+    45%{box-shadow:0.5px 0px 18px 0px #ffffff;}
+    50%{box-shadow: 0px 1px 9px 0px #ffffff80;}
+    90% {box-shadow:inset 0px 1px 9px 0px #ffffff80;}
+    100% {background-color: transparent; box-shadow:inset 0px 1px 9px 0px #ffffff80;}
+    
+}
+header>img{
+    height: 20vh;
+    
+}
+
 body{
     border: 0;
     padding: 0;
