@@ -59,9 +59,10 @@ body{
 #Info:hover{ 
     background-color: rgba(71, 78, 250, 0.116);}
 
+main > p{font-size: 3vh;}
     
 p{
-    font-family: 'Roboto Flex', Helvetica,sans-serif;font-weight:600;font-size: large;
+    font-family: 'Roboto Flex', Helvetica,sans-serif;font-weight:600;font-size: 2vh;
     text-align:center; 
     padding: 5% 0.5%;
     line-height: 25px; 
@@ -71,7 +72,7 @@ p{
 
     margin: auto;
 }
-main > p{font-size: x-large;}
+
 #capa{
     display: flex;
     align-items: center;
