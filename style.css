@@ -59,18 +59,19 @@ body{
 #Info:hover{ 
     background-color: rgba(71, 78, 250, 0.116);}
 
-main > p{font-size: 3vh;}
+
     
 p{
-    font-family: 'Roboto Flex', Helvetica,sans-serif;font-weight:600;font-size: 2vh;
+    font-family: 'Roboto Flex', Helvetica,sans-serif;font-weight:600;font-size: x-large;
     text-align:center; 
     padding: 5% 0.5%;
     line-height: 25px; 
     color: #f0e9e9;
     max-width: max-content;
     min-width: min-content;
-
     margin: auto;
+    display: none;
+
 }
 
 #capa{
@@ -98,10 +99,28 @@ span{
     box-shadow: 3px -3px 8px #ffffff1f;
     transition-duration: 0.2s;
 }
+@media screen and (orientation:landscape) {
+    
+
+
 span:hover{
     height: var(--after_al);
     width: var(--after_la);
     border-radius: 6px;
 }
 
+}
+@media screen and (orientation:portrait) {
+p{font-size: medium; display: block;}
+main{ 
+    gap: 5vh;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+span{
+    width: 50vh;
+}
+
+}
 
