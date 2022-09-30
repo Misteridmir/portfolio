@@ -81,7 +81,7 @@ p{
 }
 main{
     display: flex;
-    height: 98vh;
+    height: 99vh;
     justify-content: space-around;
     align-items: center;
     
@@ -113,13 +113,14 @@ span:hover{
 @media screen and (orientation:portrait) {
 p{font-size: medium; display: block;}
 main{ 
-    gap: 5vh;
-    justify-content: space-around;
+    
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
 span{
-    width: 50vh;
+    width: 80%;
+    height: 42%;
 }
 
 }
