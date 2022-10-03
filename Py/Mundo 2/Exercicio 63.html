@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+ <meta charset='UTF-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<link rel='stylesheet' href='../../code.css'>
+<title>Exercicio 63</title> 
+</head>
+<body>
+<code>
+
+term=int(input("Digite o numero de termos que deseja : "))
+b=0
+c=1
+cont=0
+print(b,end=" => ")
+while cont != term-1:
+ a= b+c
+ b=c
+ print(b,end=" => ")
+ c=a
+ cont+=1
+print("Acabou!",end="")
+</code>
+<body>
+</html>

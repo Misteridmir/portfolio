@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+ <meta charset='UTF-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<link rel='stylesheet' href='../../code.css'>
+<title>Exercicio 32</title> 
+</head>
+<body>
+<code>
+<br>from datetime import date<br>ano = int(input("Qual ano você quer verificar?: "))<br>if ano == 0:<br> ano = date.today().year<br>if ano % 4 == 0 :<br>    if ano % 100 != 0:<br>        if ano % 400 == 0:<br>            print("O ano de {}, é BISSEXTO.".format(ano))<br>        else: print("O ano de {}, NÃO é BISSEXTO.".format(ano))            <br>    else: print("O ano de {}, NÃO é BISSEXTO.".format(ano))          <br>else: print("O ano de {}, NÃO é BISSEXTO.".format(ano))            
+</code>
+<body>
+</html>

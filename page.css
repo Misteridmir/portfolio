@@ -64,10 +64,10 @@ a{
     color: rgb(54, 54, 54);
     text-decoration: none;
 }  
-a[href^="https"]::after{
+main a[href^="https"]::after{
     content: "🔗";
 }  
-div{margin:0px 10px;}
+
 
 h1,p,li{font-family: 'Source Sans Pro', sans-serif;}
 
@@ -103,9 +103,22 @@ footer>ul>li{
     list-style: none;
     padding: 1.6px;
 }
-footer a{color: black;}
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center ;
+    flex-wrap: wrap;
+    
+}
+footer a img{
+    height: 10vh;
+    width: 10vh;
+    margin: 8px;
+}
 
-footer p{ margin-left: 40px;}
+footer p, footer ul{ padding-left: 10px; line-height: 0.9em;}
+
+
 
 @media screen and (orientation:portrait) {
 
@@ -116,4 +129,6 @@ footer p{ margin-left: 40px;}
     p{line-height: 1.5em;}
     h1{font-size:x-large; padding-left: 2px; padding-right: 2px;}
     li{font-size: large;}
+    #icon_page{display: none;}
+    ul{flex-direction: column; padding: 0px;}
 }

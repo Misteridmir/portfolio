@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+ <meta charset='UTF-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<link rel='stylesheet' href='../../code.css'>
+<title>Exercicio 69</title> 
+</head>
+<body>
+<code>
+maior=mulher_maior=cont_h=0
+status="S"
+while status!="N":
+ print("="*20)
+ idade=int(input("Qual a idade da pessoa?: "))
+ sexo=str(input("Qual o sexo dela[M/F]: ")).upper().strip()[0] 
+ if idade>18:
+   maior+=1 
+ if sexo == "M":
+   cont_h+=1
+ if sexo== "F" and idade< 20:
+   mulher_maior+=1
+ status=str(input("Você deseja cadastrar mais alguém?[S/N]: ")).upper().strip()[0]
+ print("="*20)
+print(f"Foram cadastradas {cont_h} homens e possuem {maior} pessoas maior de 18, sendo {mulher_maior} mulheres menor de 18 ")
+</code>
+<body>
+</html>

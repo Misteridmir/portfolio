@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+ <meta charset='UTF-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<link rel='stylesheet' href='../../code.css'>
+<title>Exercicio 65</title> 
+</head>
+<body>
+<code>
+flag=False
+valor=maior=cont=0
+menor=9999999999999
+while flag==False:
+ num=int(input("Digite um numero: "))
+ valor+=num
+ cont+=1
+ a=str(input("Quer continuar a digitar?[S/N] : ")).upper().strip()[0]
+ if a == "S":
+     flag=False
+ elif a == "N":
+     flag=True    
+ if num < menor:
+     menor=num
+ if num > maior:
+     maior=num
+print("A media dos valores é {:.2f}, o maior valor é {}, e o menor valor é {}".format(valor/cont,maior,menor))            
+</code>
+<body>
+</html>
