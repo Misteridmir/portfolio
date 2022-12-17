@@ -1,6 +1,3 @@
-window.alert("No atual momento o site não está adaptado á ser visualizado em celulares!")
-//function foco(){scroll(0, 1000)}
-
 ///////////////////////////////variaveis gloais///////////////////////
 let border_radiuson = "25px"
 let border_radiusoff = "0px"
@@ -51,21 +48,14 @@ function mundar_mundo(lugar){
 /////////////////////////////////////////////////////////////////////
 
 
-///////////////////abre um site na mesma aba /////////////////////////
-
-function enviar(link) {
-    window.open(link, '_self');
-}
-
-///////////////////////////////////////////////////////////////////////////////
 
 
 //////////atualiza o code do iframe ao clickar na atividade ou nas setas////////////////
 
 var exercicio_anterior = 1
 function atualizar(mundo,exercicio){
-    document.getElementById('frame').src= "Py/Mundo "+mundo+"/Exercicio "+exercicio+".html"
-    console.log(a, typeof b,mundo,typeof mundo,exercicio)
+    document.getElementById('frame').src= "INFO/Py/Mundo "+mundo+"/Exercicio "+exercicio+".html"
+    
     
     var a=document.getElementById("tela_py_body")
     var b=a.getElementsByTagName("li")
@@ -80,23 +70,25 @@ function atualizar(mundo,exercicio){
         case 1:b[index].style.backgroundColor= "#ffcf3f";break
         case 2:b[index].style.backgroundColor= "#3771a1";break
     }
-    console.log(index, typeof index, c, typeof c)   
+      
         
     }
     }
    
 }
-
+//////////ativado pelas setas do painel, para passar ou voltar o code //////////
 function mudar(passo){
+   
     
-    
-    local= document.getElementById('frame').src
-    
-    mundo_atual=local[33]
-    exercicio_atual1=local[47]
-    exercicio_atual2=local[48]
-     if(exercicio_atual2!="."){
-      exercicio_atual= exercicio_atual1+exercicio_atual2} else{ exercicio_atual= exercicio_atual1}
+    local= document.getElementById('frame').src //pega o local do iframe que recebe as paginas; local=str
+
+    //valores em str
+    mundo_atual=local[38]                         
+    exercicio_atual1=local[52]
+    exercicio_atual2=local[53]
+
+    if(exercicio_atual2!="."){exercicio_atual= exercicio_atual1+exercicio_atual2}
+    else{ exercicio_atual= exercicio_atual1}
      
         exercicio_int= parseInt (exercicio_atual)
         mundo_int= parseInt(mundo_atual)
@@ -109,10 +101,8 @@ function mudar(passo){
         case 36: mundo=2;break;        
         case 72: exercicio=1; mundo=1;break;}
         
-        console.log( "mundo_atual:", mundo_atual,"mundo:", mundo,"exercicio_atual1", exercicio_atual1,"exercicio_atual2",exercicio_atual2,"exercicio:", exercicio)
-        console.log(local)
+        //console.log( "mundo_atual:", mundo_atual,"mundo:", mundo,"exercicio_atual1", exercicio_atual1,"exercicio_atual2",exercicio_atual2,"exercicio:", exercicio)
+        //console.log(local)
         atualizar(mundo,exercicio)
 }
 ////////////////////////////////////////////////////////////////////////////////
-  
- 

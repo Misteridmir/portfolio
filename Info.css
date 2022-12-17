@@ -100,7 +100,7 @@ nav>ul>li:hover{background-color: rgb(0, 0, 220);}
 
 
 
-/*painel do cogigo*/
+/*painel do codigo*/
 
 
 
@@ -121,7 +121,7 @@ nav>ul>li:hover{background-color: rgb(0, 0, 220);}
 
 }
 
-#iframe{width: 80%;}
+#iframe_py{width: 80%;}
 
 #painel iframe{
    width: 100%;
@@ -135,3 +135,27 @@ nav>ul>li:hover{background-color: rgb(0, 0, 220);}
 footer{background-color: rgb(25, 0, 165); border: 2px solid rgb(2, 2, 97);color: var(--cor-text-footer);} 
 footer a{color: var(--cor-text-footer);}
 
+
+
+/* Interação DOM*/
+
+#iframe_Js{width: 80%;}
+
+#painel_Js iframe{
+   width: 100%;
+   border: 4px double rgba(255, 255, 255, 0.062);
+   border-radius: 20px;   
+}
+#painel_Js{display: flex;
+   justify-content: space-evenly;
+   margin-top: 25px;
+}
+#navegacao_Js ul{
+   align-items: stretch;
+   justify-content: space-evenly;
+}
+#navegacao_Js li{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

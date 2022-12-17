@@ -118,17 +118,25 @@ footer a img{
 
 footer p, footer ul{ padding-left: 10px; line-height: 0.9em;}
 
-
+#arvore_dom{display: none;}
 
 @media screen and (orientation:portrait) {
 
-    main{margin-left: 0vw;
-    margin-right: 0vw;
+    main{
+        margin-left: 0vw;
+        margin-right: 0vw;
+    
     }
+    /*desativando o conteudo interação dos topicos quando acessados pelu celular*/
+    .em_breve{display: none;}    
     .em_breve{font-size: 4em;}
+    .painel{display: none;}
+    /*das 3 */
     p{line-height: 1.5em;}
     h1{font-size:x-large; padding-left: 2px; padding-right: 2px;}
     li{font-size: large;}
     #icon_page{display: none;}
     ul{flex-direction: column; padding: 0px;}
+
+
 }

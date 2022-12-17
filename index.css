@@ -50,7 +50,7 @@ body{
     margin: 0;
      
 
-   background-image: url("imagens/capa_logo_1280X800.png");background-repeat: no-repeat; background-position: center;
+   background-image: url("imagens/capa_logo_(1280X800).png");background-repeat: no-repeat; background-position: center;
 }
 
 #Agro:hover{ 
@@ -111,6 +111,8 @@ span:hover{
 
 }
 @media screen and (orientation:portrait) {
+
+  
 p{font-size: medium; display: block;}
 main{ 
     
